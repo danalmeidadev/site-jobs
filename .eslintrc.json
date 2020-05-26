@@ -31,10 +31,7 @@
   "rules": {
     "react/jsx-one-expression-per-line" : "off",
     "prettier/prettier": "error",
-    "react/prop-types": [
-      "enabled",
-      { "ignore": "ignore", "customValidators": "customValidator" }
-    ],
+    "react/jsx-props-no-spreading": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [

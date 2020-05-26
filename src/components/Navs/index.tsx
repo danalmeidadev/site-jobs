@@ -2,9 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import { Nav } from 'reactstrap';
-import { Header, ButtonHeader,NavItem,NavItemButton } from './styles';
+import { Header, ButtonHeader, NavItem, NavItemButton } from './styles';
 import logoImg from '../../assets/logo/logo.png';
-
 
 const Navs: React.FC = () => {
   return (
@@ -27,35 +26,48 @@ const Navs: React.FC = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav -w-100">
-              <NavItem >
-                <Link className="nav-link" to="/" >Home</Link>
-              </NavItem>
-
-              <NavItem >
-                <Link className="nav-link" to="/about" >Sobre</Link>
-              </NavItem>
-
-              <NavItem >
-                <Link className="nav-link" to="/" >Jobs</Link>
-              </NavItem>
-
-              <NavItem >
-                <Link className="nav-link" to="/" >Blog</Link>
+              <NavItem>
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
               </NavItem>
 
               <NavItem>
-                <Link className="nav-link" to="/" >Contato</Link>
+                <Link className="nav-link" to="/about">
+                  Sobre
+                </Link>
+              </NavItem>
+
+              <NavItem>
+                <Link className="nav-link" to="/">
+                  Jobs
+                </Link>
+              </NavItem>
+
+              <NavItem>
+                <Link className="nav-link" to="/">
+                  Blog
+                </Link>
+              </NavItem>
+
+              <NavItem>
+                <Link className="nav-link" to="/">
+                  Contato
+                </Link>
               </NavItem>
 
               <ButtonHeader>
-              <NavItemButton className="ml-auto" >
-                <Link className="nav-link" to="/" >Login</Link>
-              </NavItemButton>
+                <NavItemButton className="ml-auto">
+                  <Link className="nav-link" to="/">
+                    Login
+                  </Link>
+                </NavItemButton>
 
-              <NavItemButton >
-                <Link className="nav-link " to="/" >Register</Link>
-              </NavItemButton>
-
+                <NavItemButton>
+                  <Link className="nav-link " to="/">
+                    Register
+                  </Link>
+                </NavItemButton>
               </ButtonHeader>
             </ul>
           </div>
